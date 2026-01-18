@@ -1,0 +1,13 @@
+#Custom SearXNG Overlay
+
+This directory contains customizations for jason search:
+
+- **Logo**: custom/img/searxng.png
+- **Title**: Changed to "jason search"
+- **Footer**: Removed stats footer
+- **Dockerfile**: Builds custom image with overlay
+
+## Build and Deploy
+```bash
+docker build -f custom/Dockerfile -t bettercalljason/searxng:custom .
+docker push bettercalljason/searxng:custom
